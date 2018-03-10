@@ -9,6 +9,8 @@ import { HomePage } from '../pages/home/home';
 import { BroadcastPage } from '../pages/broadcast/broadcast';
 
 import { HeaderComponent } from '../components/header/header';
+import { HttpClientModule } from '@angular/common/http';
+import { MessageProvider } from '../providers/message/message';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { HeaderComponent } from '../components/header/header';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -31,7 +34,8 @@ import { HeaderComponent } from '../components/header/header';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    MessageProvider
   ]
 })
 export class AppModule {}
