@@ -6,7 +6,11 @@
   <ion-grid ion-fixed>
 
     <ion-row>
-      Send a message for all to see
+      Send a message to a person
+      <ion-item>
+        <ion-label>Person's ID</ion-label>
+        <ion-input [(ngModel)]="personId"></ion-input>
+      </ion-item>
       <ion-item>
         <ion-textarea rows="10" placeholder="Enter the message..." [(ngModel)]="message"></ion-textarea>
       </ion-item>

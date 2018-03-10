@@ -1,7 +1,20 @@
 
-
-<ion-content padding>
-
+<ion-header>
+    <app-header></app-header>
+  </ion-header>
   
+  <ion-content padding>
+    <ion-grid>
+  
+      <ion-row>
 
-</ion-content>
+
+    <button ion-button [navPush]="globalBroadcastPage">Send global message</button>
+
+    </ion-row>
+
+    <ion-row>
+    <button ion-button [navPush]="sendMessageToPersonPage">Send message to one person</button>
+  </ion-row>
+  </ion-grid>
+

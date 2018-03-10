@@ -7,6 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { BroadcastPage } from '../pages/broadcast/broadcast';
+import { SendToUserPage } from '../pages/send-to-user/send-to-user';
 
 import { HeaderComponent } from '../components/header/header';
 import { HttpClientModule } from '@angular/common/http';
@@ -17,6 +18,7 @@ import { MessageProvider } from '../providers/message/message';
     MyApp,
     HomePage,
     BroadcastPage,
+    SendToUserPage,
     HeaderComponent
   ],
   imports: [
@@ -29,6 +31,7 @@ import { MessageProvider } from '../providers/message/message';
     MyApp,
     HomePage,
     BroadcastPage,
+    SendToUserPage,
     HeaderComponent
   ],
   providers: [
