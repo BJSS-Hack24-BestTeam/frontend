@@ -8,7 +8,7 @@ import { MessageProvider } from '../../providers/message/message';
   templateUrl: 'send-to-user.html',
 })
 export class SendToUserPage {
-  personId: number;
+  personId: string;
   message: string;
 
   constructor(

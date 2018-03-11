@@ -23,7 +23,7 @@ export class MessageProvider {
     this.http.put(this.globalApi + '-1', message, { headers: headers} ).subscribe(v => console.log(v));
   }
 
-  public broadcastToPerson(personId: number, message: string) {
+  public broadcastToPerson(personId: string, message: string) {
     //const body = JSON.stringify({ message });
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     headers.append('Access-Control-Allow-Origin' , '*');
